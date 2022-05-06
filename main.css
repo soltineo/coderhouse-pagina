@@ -12,7 +12,7 @@
 
 header {
     grid-area: header;
-    padding: 0px 0px 5px 0px;
+    padding: 0px 0px 5px 0px; 
 }
 
 nav {
@@ -38,15 +38,15 @@ footer {
 }
 
 /* Lista del navegador */
-/*FLEXBOX*/
 
-
+.navbar{
+    justify-content:space-around;
+}
 nav ul {
     list-style-type: none;
-    background-color: white;
     flex-wrap: wrap;
     display: flex;
-    justify-content: space-around;
+    padding:0;
 
 
 }
@@ -57,7 +57,8 @@ nav ul li {
 
 }
 
-nav ul li a {
+
+.items-nav {
     text-decoration: none;
     color: #292828;
     font-size: 14px;
@@ -149,7 +150,7 @@ nav ul li a {
 
 
 .foto {
-    width: 200vw;
+    width: 100%;
     height: auto;
 
 }
@@ -269,6 +270,9 @@ section table {
     margin-bottom: 8px;
 }
 
+.alert{
+    font-family: 'Montserrat', sans-serif;
+}
 /*RESPONSIVE*/
 @media screen and (min-width:600px) {
 
@@ -318,4 +322,20 @@ section table {
 
     }
 
+    /*Acá probé hacer estas cosas para ver si podía espaciar el nav pero no pude
+    
+    .navbar{
+        justify-content:space-around !important;
+    }
+
+    .items-nav {
+        justify-content:space-around !important;
+    }
+        ul {
+        justify-content:space-around !important;
+    }
+    .container-fluid{
+        justify-content:space-around !important;
+    }
+    */
 }
