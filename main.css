@@ -161,7 +161,7 @@ section table {
     width: 400px;
     height: 200px;
     table-layout: auto;
-    margin: 0px auto;
+    margin: 20px auto;
     background-color: rgb(235, 235, 235);
     border-radius: 10px;
 }
@@ -172,18 +172,23 @@ section table {
 
 
 
-.fotoProducto {
-    background-color: #ebebec;
+.fotoproducto {
     width: 70vw;
     padding: 10px;
     margin: 40px auto 40px auto;
     border-radius: 10px;
     text-align: center;
+    
 
 }
 
 .productos {
     text-align: center;
+}
+.col{
+    background-color: #ebebec;
+    margin: 10px 20px; 
+    border-radius:10px;  
 }
 
 .foto-2 {
@@ -191,6 +196,7 @@ section table {
     display: block;
     margin: 10px auto;
     border-radius: 10px;
+    
 }
 
 .encabezado5 {
@@ -228,6 +234,14 @@ section table {
 
 }
 
+.carousel{
+    margin:30px;
+}
+.me-auto {
+    margin: 5px 10px !important;
+}
+
+
 .contacto {
     padding: 3rem;
     overflow: hidden;
@@ -263,6 +277,7 @@ section table {
     outline: none;
     color: #292828;
 }
+
 
 .contacto-textarea {
     display: block;
@@ -322,20 +337,4 @@ section table {
 
     }
 
-    /*Acá probé hacer estas cosas para ver si podía espaciar el nav pero no pude
-    
-    .navbar{
-        justify-content:space-around !important;
-    }
-
-    .items-nav {
-        justify-content:space-around !important;
-    }
-        ul {
-        justify-content:space-around !important;
-    }
-    .container-fluid{
-        justify-content:space-around !important;
-    }
-    */
 }
