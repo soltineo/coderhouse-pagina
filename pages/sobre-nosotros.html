@@ -95,41 +95,64 @@
                 que
                 disfrutan los deportes al aire libre.
             </p>
+            <section class="fotos-sobre-nosotros">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 
-            <!--fotos en slide con bootstrap-->
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
 
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
+                    <div class="carousel-inner">
 
-                <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../images/equipo-trabajo.jpg" class="d-block w-100" alt="equipo-trabajo">
+                            <div class="carousel-caption d-none d-md-block letra-fotos">
+                                <h5>Equipo de trabajo</h5>
+                                <p class="font-weight-bold" >Algunos de los integrantes que integran nuestro equipo.</p>
+                            </div>
+                        </div>
 
-                  <div class="carousel-item active">
-                    <img class="d-block w-100" src="https://dummyimage.com/400x300/735773/6469b0" alt="Equipo de trabajo">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="https://dummyimage.com/400x300/735773/64b07b" alt="Lugar de trabajo">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="https://dummyimage.com/400x300/735773/b06f64" alt="Evento">
-                  </div>
+                        <div class="carousel-item">
+                            <img src="../images/torneo-surf.jpg" class="d-block w-100" alt="torneo-surf">
+                            <div class="carousel-caption d-none d-md-block letra-fotos">
+                                <h5 >Eventos</h5>
+                                <p class="font-weight-bold " >Torneo de surf en Mar del Plata donde participamos como sponsors de surfistas
+                                    locales.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="../images/limpieza-playa.jpg" class="d-block w-100" alt="limpieza-playas">
+                            <div class="carousel-caption d-none d-md-block letra-fotos">
+                                <h5>Campañas</h5>
+                                <p class="font-weight-bold ">Realizamos campañas de limpieza de playas todos los sabados en diferentes puntos de
+                                    la ciudad, sumate!
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
 
                 </div>
+            </section>
 
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Anterior</span>
-                </a>
-
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Siguiente</span>
-                </a>
-
-              </div>
 
 
         </main>
@@ -162,6 +185,12 @@
                 <div class="alert alert-light" role="alert">
                     Te quedó alguna duda? Escribinos a nuestro <a href="https:/instagram.com/" class="alert-link"
                         target="_blank">Instagram</a>.
+                </div>
+            </section>
+            <!--ultimo pie de foto con boostrap-->
+            <section id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+                <div class="container text-center">
+                    <small>Pagina web para el curso Desarrollo Web de Coderhouse</small>
                 </div>
             </section>
         </footer>

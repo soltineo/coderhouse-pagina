@@ -285,6 +285,19 @@ section table {
     margin-bottom: 8px;
 }
 
+.fotos-sobre-nosotros{
+    margin: 5px 15px !important;
+    }
+    
+.letra-fotos{
+        font-family: 'Montserrat' , sans-serif !important;
+        font-weight: 500 !important;
+        color:#ffffff !important;
+        text-shadow: 1px 1px #000000 !important;
+        
+}
+
+
 .alert{
     font-family: 'Montserrat', sans-serif;
 }
