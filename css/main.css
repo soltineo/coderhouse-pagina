@@ -1,0 +1,273 @@
+@charset "UTF-8";
+.contenedor {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 5px;
+  grid-template-areas: "header" "nav" "main" "footer";
+  /*Header de todas las paginas*/
+  /*Nav de todas las paginas*/
+  /*Main con cosas de todas las paginas*/
+  /* footer para todas las paginas excepto contacto */ }
+  .contenedor header {
+    grid-area: header;
+    padding: 0px 0px 5px 0px;
+    /* Logo inicial imagen */ }
+    .contenedor header .imagenLogo {
+      display: block;
+      margin: 0px auto;
+      width: 300px;
+      height: auto; }
+  .contenedor nav {
+    grid-area: nav; }
+    .contenedor nav .navbar {
+      justify-content: space-around; }
+      .contenedor nav .navbar .me-auto {
+        margin: 5px 10px !important; }
+      .contenedor nav .navbar .items-nav {
+        text-decoration: none;
+        color: #292828;
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500; }
+      .contenedor nav .navbar nav ul {
+        list-style-type: none;
+        flex-wrap: wrap;
+        display: flex;
+        padding: 0;
+        /* items de la lista del navegador */ }
+        .contenedor nav .navbar nav ul nav ul li {
+          display: inline-flex; }
+  .contenedor main {
+    grid-area: main;
+    /*cosas de la pagina productos*/
+    /*cosas de la pagina politicas de cambio, sobre nosotros y contacto*/
+    /*cosas específicas de la pagina contacto*/ }
+    .contenedor main .encabezado1 {
+      font-family: 'Montserrat', sans-serif;
+      padding: 5px 0px 5px 0px;
+      font-size: 30px;
+      text-align: center;
+      margin: 0px;
+      color: #292828;
+      font-weight: 700;
+      letter-spacing: 3px; }
+    .contenedor main .encabezado2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      text-align: center;
+      margin: 10px;
+      color: #292828;
+      padding: 0px 0px 10px 0px; }
+    .contenedor main .encabezado3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      text-align: center;
+      color: #292828; }
+    .contenedor main .encabezado4 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      color: #292828; }
+      .contenedor main .encabezado4 .encabezadoBold {
+        font-weight: 600; }
+    .contenedor main .fondoGris {
+      background-color: #ebebec;
+      padding: 10px 0px 15px 0px;
+      margin: 10px 0px 15px 0px; }
+    .contenedor main .fotos {
+      text-align: center; }
+      .contenedor main .fotos .foto {
+        width: 100%;
+        height: auto; }
+      .contenedor main .fotos .encabezado4-index {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        color: #292828; }
+    .contenedor main .encabezadoAngosto {
+      margin: 0px 10px 15px 10px; }
+    .contenedor main section table {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      width: 400px;
+      height: 200px;
+      table-layout: auto;
+      margin: 20px auto;
+      background-color: #ebebeb;
+      border-radius: 10px; }
+    .contenedor main .container .row .col {
+      background-color: #ebebec;
+      margin: 10px 20px;
+      border-radius: 10px; }
+    .contenedor main .container .row .fotoproducto {
+      width: 70vw;
+      padding: 10px;
+      margin: 40px auto 40px auto;
+      border-radius: 10px;
+      text-align: center; }
+      .contenedor main .container .row .fotoproducto .foto-2 {
+        max-width: 150px;
+        display: block;
+        margin: 10px auto;
+        border-radius: 10px; }
+      .contenedor main .container .row .fotoproducto .encabezado3-productos {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        color: #292828; }
+      .contenedor main .container .row .fotoproducto .encabezado4-productos {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        color: #292828; }
+    .contenedor main .encabezado5 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      color: #292828;
+      margin: 10px 30px; }
+    .contenedor main .encabezado6 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      color: #292828;
+      margin: 10px 30px; }
+      .contenedor main .encabezado6 .encabezado7 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        color: #292828; }
+    .contenedor main .fotos-sobre-nosotros {
+      margin: 5px 15px !important; }
+      .contenedor main .fotos-sobre-nosotros .letra-fotos {
+        font-family: 'Montserrat', sans-serif !important;
+        font-weight: 500 !important;
+        color: #ffffff !important;
+        text-shadow: 1px 1px #000000 !important; }
+      .contenedor main .fotos-sobre-nosotros .carousel {
+        margin: 30px; }
+    .contenedor main .formulario-contacto-page {
+      background-color: #ebebec;
+      width: 400px;
+      border-radius: 10px;
+      margin: 10px auto;
+      font-family: 'Montserrat', sans-serif; }
+      .contenedor main .formulario-contacto-page .contacto-page {
+        padding: 3rem;
+        overflow: hidden;
+        color: #292828; }
+        .contenedor main .formulario-contacto-page .contacto-page .contacto-label-page {
+          display: block;
+          width: 100%;
+          margin-bottom: 8px;
+          font-weight: 600; }
+        .contenedor main .formulario-contacto-page .contacto-page .contacto-input2-page {
+          display: block;
+          width: 100%;
+          margin-bottom: 8px;
+          padding: 10px;
+          border: none;
+          background-color: #292828;
+          color: #ffffff;
+          font-size: 18px;
+          border-radius: 3px; }
+        .contenedor main .formulario-contacto-page .contacto-page .contacto-input-page {
+          display: block;
+          width: 100%;
+          margin-bottom: 8px;
+          border: none;
+          border-bottom: 2px solid #292828;
+          font-size: 20px;
+          outline: none;
+          color: #292828; }
+  .contenedor footer {
+    grid-area: footer;
+    text-align: center; }
+    .contenedor footer .alert {
+      font-family: 'Montserrat', sans-serif; }
+    .contenedor footer .encabezado3-footer {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      text-align: center;
+      color: #292828; }
+    .contenedor footer .encabezado4-footer {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      color: #292828; }
+    .contenedor footer .formulario-contacto {
+      background-color: #ebebec;
+      width: 400px;
+      border-radius: 10px;
+      margin: 10px auto;
+      font-family: 'Montserrat', sans-serif; }
+      .contenedor footer .formulario-contacto .contacto {
+        padding: 3rem;
+        overflow: hidden;
+        color: #292828;
+        /*no encontre donde está esta clase pero por las dudas no la borre*/ }
+        .contenedor footer .formulario-contacto .contacto .contacto-textarea {
+          display: block;
+          width: 100%;
+          margin-bottom: 8px; }
+        .contenedor footer .formulario-contacto .contacto .contacto-label {
+          display: block;
+          width: 100%;
+          margin-bottom: 8px;
+          font-weight: 600; }
+        .contenedor footer .formulario-contacto .contacto .contacto-input2 {
+          display: block;
+          width: 100%;
+          margin-bottom: 8px;
+          padding: 10px;
+          border: none;
+          background-color: #292828;
+          color: #ffffff;
+          font-size: 18px;
+          border-radius: 3px; }
+        .contenedor footer .formulario-contacto .contacto .contacto-input {
+          display: block;
+          width: 100%;
+          margin-bottom: 8px;
+          border: none;
+          border-bottom: 2px solid #292828;
+          font-size: 20px;
+          outline: none;
+          color: #292828; }
+
+/*RESPONSIVE*/
+@media screen and (min-width: 600px) {
+  .fotos {
+    display: flex;
+    justify-content: space-evenly; }
+    .fotos .foto {
+      display: flex;
+      justify-content: space-evenly;
+      width: 48vw;
+      height: auto; }
+    .fotos .encabezado4-index {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      color: #292828; }
+  .productos {
+    display: flex;
+    justify-content: space-around; }
+  .fotoProducto {
+    background-color: #ebebec;
+    width: 25vw;
+    margin: 40px;
+    border-radius: 10px; }
+  .encabezadoAngosto {
+    margin: 0px 150px 15px 150px; }
+  .formulario-contacto {
+    margin: 10px auto; } }
