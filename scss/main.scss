@@ -1,5 +1,28 @@
-
 @import "variables";
+
+//mapa
+$redes: (
+            instagram: rgb(201, 40, 118),
+            facebook:rgb(33, 33, 63),
+            );
+
+            @each $red,$color in $redes {
+                .red-#{$red}{
+                    color:$color !important;
+                }
+                
+            }
+
+//extend
+.tipo-color{
+    font-family: $tipografia;
+    color: $color-principal;
+}
+//MIXIN
+@mixin font-size-weight ($tamano, $negrita) {
+    font-size: $tamano;
+    font-weight: $negrita;    
+}
 
 .contenedor {
     display: grid;
@@ -37,11 +60,11 @@
             }
 
             .items-nav {
+                @include font-size-weight(14px,500);
                 text-decoration: none;
                 color: $color-principal;
-                font-size: 14px;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 500;
+                font-family: $tipografia;
+                
 
             }
 
@@ -65,41 +88,37 @@
         grid-area: main;
 
         .encabezado1 {
-            font-family: 'Montserrat', sans-serif;
+            @extend .tipo-color;
+            @include font-size-weight(30px,700);
             padding: 5px 0px 5px 0px;
-            font-size: 30px;
             text-align: center;
             margin: 0px;
-            color: $color-principal;
-            font-weight: 700;
+            
+            
             letter-spacing: 3px;
         }
 
         .encabezado2 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 20px;
-            font-weight: 400;
+            @extend .tipo-color;
+            @include font-size-weight(20px,400);
             text-align: center;
             margin: 10px;
-            color: $color-principal;
             padding: 0px 0px 10px 0px;
 
         }
 
         .encabezado3 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            font-size: 20px;
+            @extend .tipo-color;
+            @include font-size-weight(20px,700);
             text-align: center;
-            color: $color-principal;
+            
         }
 
         .encabezado4 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
+            @extend .tipo-color;
+            @include font-size-weight(16px,400);
             text-align: center;
-            color: $color-principal;
+           
 
             .encabezadoBold {
                 font-weight: 600;
@@ -123,11 +142,14 @@
             }
 
             .encabezado4-index {
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 400;
-                font-size: 20px;
+                @extend .tipo-color;
+                @include font-size-weight(20px,400);
                 text-align: center;
-                color: $color-principal;
+                
+
+                .encabezado-bold{
+                    font-weight:600;
+                }
 
             }
         }
@@ -138,7 +160,7 @@
         }
 
         section table {
-            font-family: 'Montserrat', sans-serif;
+            font-family: $tipografia;
             font-size: 16px;
             width: 400px;
             height: 200px;
@@ -149,11 +171,13 @@
         }
 
         .container {
+            font-family: $tipografia!important;
             .row {
                 .col {
                     background-color: #ebebec;
                     margin: 10px 20px;
                     border-radius: 10px;
+                    
                 }
 
                 .fotoproducto {
@@ -172,19 +196,17 @@
                     }
 
                     .encabezado3-productos {
-                        font-family: 'Montserrat', sans-serif;
-                        font-weight: 700;
-                        font-size: 20px;
+                        @extend .tipo-color;
+                        @include font-size-weight(20px,700);
                         text-align: center;
-                        color: $color-principal;
+                        
                     }
 
                     .encabezado4-productos {
-                        font-family: 'Montserrat', sans-serif;
-                        font-weight: 400;
-                        font-size: 16px;
+                        @extend .tipo-color;
+                        @include font-size-weight(16px,400);
                         text-align: center;
-                        color: $color-principal;
+                        
                     }
 
                 }
@@ -193,26 +215,19 @@
 
         /*cosas de la pagina politicas de cambio, sobre nosotros y contacto*/
         .encabezado5 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            font-size: 16px;
-            color: $color-principal;
+            @extend .tipo-color;
+            @include font-size-weight(16px,700);
             margin: 10px 30px;
         }
 
         .encabezado6 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            color: $color-principal;
+            @extend .tipo-color;
+            @include font-size-weight(16px,400);
             margin: 10px 30px;
 
             .encabezado7 {
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 700;
-                font-size: 16px;
-                color: $color-principal;
-
+                @extend .tipo-color;
+                @include font-size-weight(16px,700);
             }
         }
 
@@ -220,7 +235,7 @@
             margin: 5px 15px !important;
 
             .letra-fotos {
-                font-family: 'Montserrat', sans-serif !important;
+                font-family: $tipografia !important;
                 font-weight: 500 !important;
                 color: #ffffff !important;
                 text-shadow: 1px 1px #000000 !important;
@@ -239,7 +254,7 @@
             width: 400px;
             border-radius: 10px;
             margin: 10px auto;
-            font-family: 'Montserrat', sans-serif;
+            font-family: $tipografia;
 
             .contacto-page {
                 padding: 3rem;
@@ -286,23 +301,23 @@
         text-align: center;
 
         .alert {
-            font-family: 'Montserrat', sans-serif;
+            font-family: $tipografia;
+            
+            
         }
 
         .encabezado3-footer {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            font-size: 20px;
+            @extend .tipo-color;
+            @include font-size-weight(20px,700);
             text-align: center;
-            color: $color-principal;
+           
         }
 
         .encabezado4-footer {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
+            @extend .tipo-color;
+            @include font-size-weight(16px,400);
             text-align: center;
-            color: $color-principal;
+            
         }
 
         .formulario-contacto {
@@ -310,7 +325,7 @@
             width: 400px;
             border-radius: 10px;
             margin: 10px auto;
-            font-family: 'Montserrat', sans-serif;
+            font-family: $tipografia;
 
             .contacto {
                 padding: 3rem;
@@ -374,11 +389,9 @@
             height: auto;
         }
         .encabezado4-index {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
+            @include font-size-weight(16px,400);
             text-align: center;
-            color: $color-principal;
+            
     
         }
     }
