@@ -86,6 +86,7 @@ $redes: (
     /*Main con cosas de todas las paginas*/
     main {
         grid-area: main;
+        margin:10px;
 
         .encabezado1 {
             @extend .tipo-color;
@@ -162,8 +163,8 @@ $redes: (
         section table {
             font-family: $tipografia;
             font-size: 16px;
-            width: 400px;
-            height: 200px;
+            width: 410px;
+            height: 210px;
             table-layout: auto;
             margin: 20px auto;
             background-color: rgb(235, 235, 235);
@@ -183,7 +184,7 @@ $redes: (
                 .fotoproducto {
                     width: 70vw;
                     padding: 10px;
-                    margin: 40px auto 40px auto;
+                    margin: 40px 10 40px 10;
                     border-radius: 10px;
                     text-align: center;
 

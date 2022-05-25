@@ -49,6 +49,7 @@
           display: inline-flex; }
   .contenedor main {
     grid-area: main;
+    margin: 10px;
     /*cosas de la pagina productos*/
     /*cosas de la pagina politicas de cambio, sobre nosotros y contacto*/
     /*cosas específicas de la pagina contacto*/ }
@@ -95,8 +96,8 @@
     .contenedor main section table {
       font-family: "Montserrat", sans-serif;
       font-size: 16px;
-      width: 400px;
-      height: 200px;
+      width: 410px;
+      height: 210px;
       table-layout: auto;
       margin: 20px auto;
       background-color: #ebebeb;
@@ -110,7 +111,7 @@
       .contenedor main .container .row .fotoproducto {
         width: 70vw;
         padding: 10px;
-        margin: 40px auto 40px auto;
+        margin: 40px 10 40px 10;
         border-radius: 10px;
         text-align: center; }
         .contenedor main .container .row .fotoproducto .foto-2 {
