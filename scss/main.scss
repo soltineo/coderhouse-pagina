@@ -52,8 +52,11 @@ $redes: (
     nav {
         grid-area: nav;
 
-        .navbar {
-            justify-content: space-around;
+        .navbar-expand-lg {
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
+    
 
             .me-auto {
                 margin: 5px 10px !important;
@@ -173,6 +176,7 @@ $redes: (
 
         .container {
             font-family: $tipografia!important;
+            
             .row {
                 .col {
                     background-color: #ebebec;
