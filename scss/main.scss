@@ -167,7 +167,6 @@ $redes: (
             font-family: $tipografia;
             font-size: 16px;
             width: 90%;
-            height: auto;
             table-layout: auto;
             margin: 20px auto;
             background-color: rgb(235, 235, 235);
@@ -383,6 +382,10 @@ $redes: (
 
 /*RESPONSIVE*/
 @media screen and (min-width:600px) {
+    .contenedor main section table {
+        width:50%;
+        height:auto;
+      }
 
     .fotos {
         display: flex;

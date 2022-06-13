@@ -13,7 +13,10 @@
   display: grid;
   grid-template-columns: auto;
   grid-row-gap: 5px;
-  grid-template-areas: "header" "nav" "main" "footer";
+  grid-template-areas: "header"
+ "nav"
+ "main"
+ "footer";
   /*Header de todas las paginas*/
   /*Nav de todas las paginas*/
   /*Main con cosas de todas las paginas*/
@@ -96,8 +99,8 @@
     .contenedor main section table {
       font-family: "Montserrat", sans-serif;
       font-size: 16px;
-      width: 410px;
-      height: 210px;
+      width: 90%;
+      height:auto;
       table-layout: auto;
       margin: 20px auto;
       background-color: #ebebeb;
@@ -237,6 +240,10 @@
 
 /*RESPONSIVE*/
 @media screen and (min-width: 600px) {
+  .contenedor main section table {
+    width:50%;
+    height:auto;
+  }
   .fotos {
     display: flex;
     justify-content: space-evenly; }
